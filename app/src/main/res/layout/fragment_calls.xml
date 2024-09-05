@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CallsFragment">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/mlaiexpert"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        app:shapeAppearanceOverlay="@style/Circular"
+        android:id="@+id/imge1"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/imge1"
+        android:text="Abhishek Raj"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_call_received_24"
+        android:layout_toRightOf="@id/imge1"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Yesterday 12:40 PM"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@android:drawable/sym_action_call"
+        android:layout_toRightOf="@id/textView"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        />
+
+
+</RelativeLayout>

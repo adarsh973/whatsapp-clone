@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".StatusFragment">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/scenery"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        app:shapeAppearanceOverlay="@style/Circular"
+        android:id="@+id/img1"/>
+
+    <TextView
+        android:id="@+id/mainTxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/img1"
+        android:text="My status"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/descTxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="20 minutes ago"
+        android:layout_below="@id/mainTxt1"
+        android:layout_toRightOf="@id/img1"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/recentUpdates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img1"
+        android:layout_marginTop="30dp"
+        android:background="#18BAAB"
+        android:backgroundTint="#14C8B7"
+        android:text="    Recent Updates"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/scene2"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        app:shapeAppearanceOverlay="@style/Circular"
+        android:id="@+id/img2"
+        android:layout_below="@id/recentUpdates"/>
+
+    <TextView
+        android:id="@+id/mainTxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/img2"
+        android:text="Harry"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/recentUpdates"/>
+
+    <TextView
+        android:id="@+id/descTxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="33 minutes ago"
+        android:layout_below="@id/mainTxt2"
+        android:layout_toRightOf="@id/img2"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"/>
+</RelativeLayout>
